@@ -3,19 +3,23 @@
   padding: 0;
 }
 body {
+  background-color: #eee;
   font-family: "Roboto", sans-serif;
+  color: #444;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 /*navbar*/
 nav {
   display: flex;
-  background-color: coral;
+  background-color: #fff;
   justify-content: space-around;
+  box-shadow: 0px 0px 5px 1px;
   /* padding: 20px 0; atas bawah 20  kiri kanan 0 */
   /* atur padding dengan flex */
   height: 45px;
   align-items: center;
-  color: whitesmoke;
+  color: #444;
 }
 nav ul {
   display: flex;
@@ -31,7 +35,7 @@ nav .logo {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: #444;
   font-size: 0.9rem;
 }
 
@@ -60,7 +64,7 @@ nav ul li a:hover {
   display: block;
   width: 21px;
   height: 2px;
-  background-color: whitesmoke;
+  background-color: #444;
   border-radius: 3px;
   transition: all 0.7s;
 }
@@ -91,24 +95,71 @@ nav ul li a:hover {
 .image {
   width: 100%;
   height: auto;
-  max-width: 140px;
+  max-width: 200px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
 
   border: 2px solid blue;
   padding: 8px;
   border-radius: 5px;
-  margin: 0 auto;
-}
-main {
+  margin: 0 auto; */
+
+  background-color: #fff;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 3px 3px 10px 1px #444;
+  border-radius: 3px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+main #home article {
+  margin: 15px 0px;
+}
+
+article h2 {
+  margin-bottom: 5px;
+}
+
+figure {
+  align-self: center;
+  padding: 0;
+}
+
+figure figcaption {
+  text-align: center;
+}
+
+#profil li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid #444 1px;
+  margin: 10px 0px;
+}
+
+#motoHidup {
+  display: flex;
+  flex-direction: column;
+}
+
+#motoHidup .quote {
+  text-align: center;  
+}
+
+#motoHidup .quoteBy {
+  text-align: end;  
 }
 
 .box {
@@ -127,14 +178,12 @@ footer {
   text-align: center;
 }
 h2 {
-  text-align: center;
-  color: brown;
+  /* text-align: center; */
   text-justify: inter-word;
   word-wrap: break-word;
 }
 h5 {
   text-align: center;
-  color: red;
   word-wrap: break-word;
 }
 p {
@@ -145,14 +194,20 @@ p {
   nav ul {
     width: 50%;
   }
+  .container {
+    margin: 20px 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .menu-toggle {
     display: flex;
   }
-  main {
-    flex-direction: column-reverse;
+  .container {
+    margin: 20px 10px;
+  }
+  .image {
+    max-width: 150px;
   }
   nav ul {
     /* position: absolute;
@@ -177,7 +232,7 @@ p {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    background-color: coral;
+    background-color: #fff;
     z-index: 0;
     transform: translateX(100%);
     transition: all 0.3s;
