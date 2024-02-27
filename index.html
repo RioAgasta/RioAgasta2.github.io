@@ -22,11 +22,10 @@
           <h4>Rio Agasta</h4>
         </div>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#">Files</a></li>
-          <li><a href="#">Assignment</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#tentangSaya">Tentang Saya</a></li>
+          <li><a href="#profil">Profil Diri</a></li>
+          <li><a href="#skills">Kemampuan</a></li>
+          <li><a href="#lokasi">Lokasi Kampus</a></li>
         </ul>
         <div class="menu-toggle">
           <input type="checkbox" />
@@ -40,13 +39,13 @@
       <div class="container">
         <div id="home">
           <!-- <h1>Home</h1> -->
-          <figure class="box">
-            <img src="img/Me.jpg" class="image" />
-            <figcaption><h3>Rio Agasta</h3></figcaption>
-          </figure>
-          <div class="box flextwo">
+          <div>
+            <h1>Tentang Saya</h1>
             <article id="tentangSaya">
-              <h2>Tentang Saya</h2>
+              <figure class="box">
+                <img src="img/Me.jpg" class="image" />
+                <figcaption><h3>Rio Agasta</h3></figcaption>
+              </figure>
               <p>
                 Halo! Nama saya Rio Agasta, atau biasa dipanggil Rio. Saya
                 merupakan seorang Mahasiswa tingkat satu yang sedang menempuh
@@ -69,6 +68,15 @@
                 <li><b>Tempat/Tanggal Lahir:</b> Bandung, 3 Agustus 2004</li>
                 <li><b>Jenis Kelamin:</b> Laki-Laki</li>
                 <li><b>Domisili:</b> Kota Bandung</li>
+                <li>
+                  <b>Akun LinkedIn:</b>
+                  <a
+                    class="externalLink"
+                    href="www.linkedin.com/in/rio-agasta-9a5261295"
+                    target="_blank"
+                    >Rio Agasta</a
+                  >
+                </li>
               </ul>
             </article>
             <article id="motoHidup">
@@ -84,7 +92,7 @@
               <h2>Hobi Saya</h2>
               <div class="galeriHobi">
                 <!-- Todo: add card, fix alignment on smaller screen -->
-                <img title="Berenang" src="img/swim.png" alt="swimming" />
+                <img title="Berenang" src="img/swim.jpg" alt="swimming" />
                 <img
                   title="Badminton"
                   src="img/badminton.jpg"
@@ -94,6 +102,10 @@
                 <img title="Game" src="img/game.jpg" alt="game" />
               </div>
             </article>
+            <div class="popup-image">
+              <span>&times;</span>
+              <img title="Berenang" src="img/swim.png" alt="swimming" />
+            </div>
           </div>
         </div>
       </div>
@@ -105,7 +117,9 @@
               <img src="img/c.png" alt="c" />
               <div class="text">
                 <h4>Pemrograman C</h4>
-                <p>Saya memiliki kemampuan dalam pemrograman menggunakan Bahasa C</p>
+                <p>
+                  Saya memiliki kemampuan dalam pemrograman menggunakan Bahasa C
+                </p>
               </div>
             </div>
             <div class="teknis">
@@ -116,38 +130,83 @@
               </div>
             </div>
             <div class="teknis">
-                <img src="img/laravel.png" alt="laravel" />
-                <div class="text">
-                    <h4>API Laravel</h4>
-                    <p>Saya berpengalaman dalam membuat API menggunakan Laravel</p>
-                </div>
+              <img src="img/laravel.png" alt="laravel" />
+              <div class="text">
+                <h4>API Laravel</h4>
+                <p>Saya berpengalaman dalam membuat API menggunakan Laravel</p>
+              </div>
             </div>
             <div class="teknis">
-                <img src="img/vue.png" alt="vue" />
-                <div class="text">
-                    <h4>Vue.js</h4>
-                    <p>Saya pernah membuat front-end website menggunakan Vue.js</p>
-                </div>
+              <img src="img/vue.png" alt="vue" />
+              <div class="text">
+                <h4>Vue.js</h4>
+                <p>Saya pernah membuat front-end website menggunakan Vue.js</p>
+              </div>
             </div>
             <div class="teknis">
-                <img src="img/webdev.png" alt="html/css/js" />
-                <div class="text">
-                    <h4>HTML/CSS/JS</h4>
-                    <p>Saya berpengalaman mendesain tampilan web sederhana menggunakan HTML/CSS/JS</p>
-                </div>
+              <img src="img/webdev.png" alt="html/css/js" />
+              <div class="text">
+                <h4>HTML/CSS/JS</h4>
+                <p>
+                  Saya berpengalaman mendesain tampilan web sederhana
+                  menggunakan HTML/CSS/JS
+                </p>
+              </div>
             </div>
             <div class="teknis">
-                <img src="img/office.png" alt="" />
-                <div class="text">
-                    <h4>Ms Office</h4>
-                    <p>Saya memiliki kemampuan dasar dalam menggunakan tools Ms Office</p>
-                </div>
+              <img src="img/office.png" alt="" />
+              <div class="text">
+                <h4>Ms Office</h4>
+                <p>
+                  Saya memiliki kemampuan dasar dalam menggunakan tools Ms
+                  Office
+                </p>
+              </div>
             </div>
           </article>
         </div>
+        <article id="lessonLearned">
+          <h2>Lesson Learned</h2>
+          <p>
+            Saya bermimpi menjadi seorang front-end developer, dan saya sedang
+            mengasah kemampuan saya dalam mengembangkan tampilan website
+            menggunakan HTML, CSS, dan JavaScript. Saya merasa senang dengan
+            tugas ini karena bisa melatih kemampuan saya lebih jauh dalam
+            pengembangan tampilan website.
+          </p>
+        </article>
+        <article id="harapan">
+          <h2>Harapan Setelah Lulus dari JTK</h2>
+          <p>
+            Sejauh ini saya berkuliah di JTK Polban, saya sering merasa tertekan
+            karena banyaknya tugas dan materi kuliah yang sulit. Saya yakin
+            kedepannya akan semakin sulit lagi, tetapi meskipun kuliah di JTK
+            penuh dengan tekanan, saya harap hal ini bisa menjadikan saya
+            pribadi yang disiplin, rajin, fokus, pekerja keras, dan cepat
+            beradaptasi di dunia kerja nanti. Selain itu tentu saja saya
+            berharap bisa mendapatkan hard skill yang mumpuni untuk bersaing di
+            industri, dan juga bisa menjaga relasi dengan teman-teman di JTK.
+          </p>
+        </article>
+      </div>
+      <div id="lokasi" class="container">
+        <h1>Lokasi Kampus Saya</h1>
+        <iframe
+          id="maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15844.54299884002!2d107.57171773382412!3d-6.87433395101501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e420abc30acf%3A0x10569255865460a5!2sPoliteknik%20Negeri%20Bandung!5e0!3m2!1sen!2sid!4v1709046122444!5m2!1sen!2sid"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </main>
-    <footer class="box">Rizqi, Di depan Laptop 27 Februari 2024</footer>
+    <footer class="box">
+      <p>Dibuat oleh <b>Rio Agasta</b></p>
+      <p>Tugas <b>Proyek 1 Week 4</b>, 27 Februari 2024</p>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
