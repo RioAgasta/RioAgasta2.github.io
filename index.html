@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css" />
+    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
+
     <title>Proyek1 STr HTML 27 02 2024</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -26,6 +31,7 @@
           <li><a href="#profil">Profil Diri</a></li>
           <li><a href="#skills">Kemampuan</a></li>
           <li><a href="#lokasi">Lokasi Kampus</a></li>
+          <li><a href="#scraping">Scraping</a></li>
         </ul>
         <div class="menu-toggle">
           <input type="checkbox" />
@@ -104,7 +110,7 @@
             </article>
             <div class="popup-image">
               <span>&times;</span>
-              <img title="Berenang" src="img/swim.png" alt="swimming" />
+              <img title="Berenang" src="img/swim.jpg" alt="swimming" />
             </div>
           </div>
         </div>
@@ -201,6 +207,22 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+      </div>
+      <div id="scraping" class="container">
+        <h1>Data Scraping I</h1>
+
+        <!-- Data Table -->
+        <table id="dataScraping" class="compact hover stripe row-border" >
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Judul</th>
+              <th>Kategori</th>
+              <th>Waktu Publish</th>
+              <th>Waktu Scraping</th>
+            </tr>
+          </thead>
+        </table>
       </div>
     </main>
     <footer class="box">

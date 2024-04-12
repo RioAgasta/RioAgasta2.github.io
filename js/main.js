@@ -23,3 +23,41 @@ document.querySelectorAll('.galeriHobi img').forEach(image => {
 document.querySelector('.popup-image span').onclick = () => {
     document.querySelector('.popup-image').style.display = 'none';
 }
+
+// Data Table
+let table = $('#dataScraping').DataTable({
+    ajax: {url: './../python/headlines.json', dataSrc: ''},
+    columnDefs: [
+        {
+            searchable: false,
+            orderable: false,
+            targets: 0
+        }
+    ],
+    order: [[0, 'asc']],
+    columns: [
+        { 
+            data: null,
+            className: 'dt-body-center',
+            render: function ( data, type, row, meta ) {
+                return meta.row + 1;
+            }
+        },
+        { data: 'judul' },
+        { data: 'kategori' },
+        { data: 'waktuPublish' },
+        { data: 'waktuScraping' }
+    ]
+})
+
+table
+    .on('draw.dt', function () {
+        let counter = 1;
+        table
+            .column(0, { search: 'applied', order: 'applied' })
+            .nodes()
+            .each(function (cell, i) {
+                cell.innerHTML = counter++;
+            });
+    })
+    .draw();
