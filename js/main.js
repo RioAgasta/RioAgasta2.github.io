@@ -26,7 +26,7 @@ document.querySelector('.popup-image span').onclick = () => {
 
 // Data Table
 let table = $('#dataScraping').DataTable({
-    ajax: {url: './../python/headlines.json', dataSrc: ''},
+    ajax: {url: 'python/headlines.json', dataSrc: ''},
     columnDefs: [
         {
             searchable: false,
